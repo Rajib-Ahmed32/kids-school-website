@@ -47,7 +47,6 @@ picture {
   max-width: 85%;
   padding: 2em 0 2em 0;
   margin: 0 auto;
-  background-color: grey;
 }
 
 .regular-btn{
@@ -73,7 +72,7 @@ picture {
 .font-15-medium{
   font-family: "Raleway", serif;
   font-weight: 500;
-  font-size: clamp(0.639rem, 1vw, 0.9rem);
+  font-size: clamp(0.839rem, 1vw, 0.9rem);
 }
 
 .font-20-regular, .font-20-medium{
@@ -91,7 +90,7 @@ picture {
 
 .font-24-bold{
   font-family: "Quicksand", serif;
-  font-size: clamp(1.275rem, 3vw, 1.58rem);
+  font-size: clamp(1.1rem, 5vw, 1.3rem);
   font-weight: 700;
   line-height: 1.6;
 }
@@ -197,6 +196,7 @@ picture {
 .hero-section-width{
   max-width: 85%;
   margin: 0 auto;
+  margin-bottom: 1.5em;
 }
 
 .hero-image-container{

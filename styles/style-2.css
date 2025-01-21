@@ -1,0 +1,106 @@
+/*=== Curriculum Section ===*/
+
+.curriculum-section{
+    text-align: center;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.curriculum-title{
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    font-weight: bold;
+    color: #000;
+}
+
+.curriculum-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+
+.curriculum-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.curriculum-image{
+    height: 136px;
+    width: 136px;
+    margin: 0 auto;
+}
+
+.curriculum-card-title{
+    margin: .8rem 0;
+}
+
+.curriculum-card-description{
+    color: #646464;
+    margin-bottom: .8rem;
+}
+
+.curriculum-cards > .curriculum-card:nth-child(1){
+    background: linear-gradient(to bottom,#258bffc0, #a4d8ff57, white, white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px #0000000f;
+}
+
+.curriculum-cards > .curriculum-card:nth-child(2){
+    background: linear-gradient(to bottom, #FFCB73c0, #ffd99260, white, white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px #0000000f;
+}
+
+.curriculum-cards > .curriculum-card:nth-child(3){
+    background: linear-gradient(to bottom, #43405Ac0, #5b586d3d, white, white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px #0000000f;
+}
+
+.curriculum-card:nth-of-type(1) a{
+  color: #64C8FF;
+  font-weight: 700;
+}
+
+.curriculum-card:nth-of-type(2) a{
+    color: #F0AA00;
+    font-weight: 700;
+  }
+
+  .curriculum-card:nth-of-type(3) a{
+    color: #8700FF;
+    font-weight: 700;
+  }
+
+  .prev-button, .next-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background-color: #F0AA00;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .prev-button{
+    margin-right: 3px;
+  }
+
+  .next-button{
+    margin-left: 3px;
+  }
+
+  @media screen and (max-width: 750px) {
+    .curriculum-navigation{
+        display: none;
+    } 
+  }
+
+
+  
+
+
