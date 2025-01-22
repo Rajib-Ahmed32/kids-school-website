@@ -61,12 +61,16 @@ picture {
 }
 
 .position-btn{
-  padding: 0.7em 1.4em;
+  padding: 0.6em 1.2em;
   color: white;
   border: none;
-  border-radius: 0.7em;
-  font-size: 0.959rem;
-  font-weight: 500;
+  border-radius: 0.6em;
+  font-size: clamp(0.5rem, 5vw, 0.759rem);
+  font-weight: 600;
+}
+
+.position-btn:hover{
+  background-color: #01ACFD;
 }
 
 .font-15-medium{
