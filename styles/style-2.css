@@ -269,9 +269,9 @@
     padding: 1em 0 1em 0;
     margin: 0 auto;
   }
-  .sub-stories{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .sub-stories {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
   }
   .main-story {
     display: none;
@@ -298,5 +298,27 @@
     font-weight: 600;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .sub-stories {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0.5em; 
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sub-stories {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+.sub-stories img, 
+.sub-stories div {
+  max-width: 100%; 
+  height: auto; 
+  overflow: hidden; 
+}
+
 
 
