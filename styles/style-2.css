@@ -116,6 +116,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-bottom: 2em;
 }
 
 .story-container {
@@ -188,6 +189,11 @@
   margin: 0.5em 0;
 }
 
+.sub-story-title{
+  color: black;
+  font-weight: bold;
+}
+
 .main-story-date-button {
   padding: 0.7em 1.4em;
   color: white;
@@ -255,6 +261,7 @@
   .story-section {
     width: 100%;
     padding: 0px 15px;
+    padding-bottom: 2em;
   }
   .story-container {
     grid-template-columns: 1fr;
@@ -262,10 +269,17 @@
     padding: 1em 0 1em 0;
     margin: 0 auto;
   }
+  .sub-stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
   .main-story {
     display: none;
   }
 
+}
+
+@media screen and (max-width: 476px){
   .sub-story-visibility {
     display: block;
     position: relative;
@@ -274,8 +288,8 @@
   .btn-five,
   .btn-six {
     position: absolute;
-    bottom: 60px;
-    right: 35px;
+    bottom: 40px;
+    right: 180px;
     padding: 0.6em 1.2em;
     color: white;
     border: none;
@@ -284,4 +298,5 @@
     font-weight: 600;
   }
 }
+
 

@@ -254,3 +254,12 @@ picture {
   }
 }
 
+/* Marquee element style */
+.school-motto{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.2rem;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 8px;
+}
+
